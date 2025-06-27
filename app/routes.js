@@ -46,5 +46,9 @@ router.get('/user/:id/performance', (req, res) => {
     return handleNoUserData(res, userData)
 })
 
+router.get('/ping', (req, res) => {
+  res.status(200).send('pong')
+});
+
 
 module.exports = router
